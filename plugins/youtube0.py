@@ -56,7 +56,6 @@ async def ASMR_today():
     yt = YouTube(url)
     title = yt.title
     length = yt.length
-    pushed_videos.append(url)
     return athor,title,video_id,length
 
 async def ASMR_random():
@@ -69,7 +68,6 @@ async def ASMR_random():
     yt = YouTube(url)
     title = yt.title
     length = yt.length
-    pushed_videos.append(url)
     return athor,title,video_id,length
 
 async def get_audio(video_id):
